@@ -13,6 +13,7 @@ $carousel-item-height: 300px;
 	padding: $pad-up-dn $pad-left-right;
 }
 //  variables and Mixin class 
+
 .row-header{
     @include zero-margin(0px,0px);
 }
@@ -34,6 +35,9 @@ $carousel-item-height: 300px;
     color:floralwhite;
 }
 
+.modal-body{
+    background-color: $background-pale;
+}
 address{
     font-size:80%;
     margin:0px;
@@ -56,6 +60,14 @@ body{
     padding: 10px;
 }
 //Nesting Selectors
+.modal-header{
+    background-color: $background-dark;
+    color: floralwhite;
+    .close{
+        color: floralwhite
+        ;
+    }
+}
 .carousel {
     background:$background-dark;
 
